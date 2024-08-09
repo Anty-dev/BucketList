@@ -1,0 +1,43 @@
+.title {
+text-align: center;
+padding-top: 60px;
+}
+
+.add {
+    position: absolute;
+    top: 18%; 
+    left: 20%;
+}
+
+.input-div {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.list_input {
+    height: 70px;
+    width: 600px;
+    border: 0.075cm solid black;
+}
+
+.list-button {
+    width: 240px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.current-list {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.the-list {
+    text-align: center;
+}
+
+.the-list ul {
+    display: inline-block;
+    margin-top: 6%;
+}
