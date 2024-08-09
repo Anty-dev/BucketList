@@ -38,12 +38,13 @@ const BucketList = () => {
     };
 
     /* check box state */
-    const HandleCheckbox = () => {
-        setMyList([
-            ...myList,
-            myList.done = myList.done ? console.log("1") : console.log("2")
-        ])
-    }
+    const HandleCheckbox = (id) => {
+        setMyList((p) => 
+            p.map((item) => 
+                item.id === id ? {...item, done: !item.done} : item
+            )
+        );
+    };
         
     return(
         <div className="fragment">
@@ -63,9 +64,9 @@ const BucketList = () => {
             <div className="the-list">
             <ul>
                 {myList.map(item => (
-                <li key={item.id}>{item.text}{' '}
-                <input type="checkbox" onClick={() => HandleDelete(item.id)}></input>
-                <button className='delete-button' onClick={() => HandleDelete(item.id)}>Delete</button>
+                <li key={item.id}> <input type="checkbox" onClick={() => HandleCheckbox(item.id)}></input>
+                {' '} <p className={item.done ? 'true' : ''}> {item.text}</p> {' '}
+                <button className='delete-button' onClick={() => HandleDelete(item.id)}><p className="delete-p">Delete</p></button>
                 </li>
                 ))}
                 
