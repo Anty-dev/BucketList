@@ -1,3 +1,6 @@
+/*
+* The function takes in a list as a parameter and returns a sorted version depending on whether the elements are done or not
+*/
 
 const sortList = (list) => {
     return list.sort((item1, item2) => {

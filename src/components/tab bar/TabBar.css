@@ -9,9 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: fixed; /* Fixed so the tab stays on the screen and is not hidden when scrolling down  */
     z-index: 1;
     width: 100%;
+    top: 0px;
 }
 
 a {
@@ -34,11 +35,5 @@ h2 {
     font-size: 1.3rem;
 }
 
-.left {
-    background-color: beige;
-    height: 60px;
-    z-index: 2;
-    display: flex;
-    position: absolute;
-}
+
 

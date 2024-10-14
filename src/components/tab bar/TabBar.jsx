@@ -10,16 +10,14 @@ const TabBar = () => {
             <div>
                 
                 <div className='bar'>
-                <div className='left'>
+                <div>
 
                 </div>
                 <div className='center'>
                 <h2><Link to="/">Home</Link></h2>
                 <h2><Link to="/Bucket">Bucket List</Link></h2>
                 </div>
-                <div className='right'>
 
-                </div>
                 </div>
                 
 

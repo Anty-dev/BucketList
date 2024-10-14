@@ -1,0 +1,50 @@
+.start {
+    padding-top: 3%;
+}
+
+.App {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    height: 30%; 
+    background-color: #e0f7fb;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    height: 70%; 
+    background-color: #ffffff;
+}
+
+.left {
+    background-color: beige;
+    margin: 80px 50px;
+    border-radius: 7%;
+    border: 10px dotted #000000;
+}
+
+.right {
+    background-color: beige;
+    border-radius: 7%;
+    border: 10px dotted #000000;
+    margin: 80px 50px;
+}
+
+.right, .left {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.top, .bottom {
+    display: flex;
+    width: 100%;
+}
+
+
