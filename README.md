@@ -1,8 +1,3 @@
-About
-
-This project is 
-
-
 How each of the components work 
 
 List: The way the list is created is from a change in state in the textarea by the user entering text. Then once the user is happy with their input they then hit submit which triggers another change in state in the list. Everytime the submit button is hit an if statement checks if the field isn't empty. If true then creates a object called newItem. This object has 3 attributes which are its id, the actual text that the user inputed, and a boolean called done which is set to false by default. After the object creation then the function sets the current list by passing in a function that takes the current state as a argument. The function returns the sortList function so that when this new item is added the list stays sorted, with the input as an array with all the elements of the previous array plus the newItem. After the new item is added and the list is sorted the input field in the textarea is cleared, back to its default state. The method i used to change the items when they were completed was using css to add some text decoration of a line through the text. I used a ternary operator to check the condition in this case if the item is done and if true it switchs the classname to the one with the text decoration of line through.
