@@ -6,6 +6,16 @@ import garbageimage from '../images/garbage.png';
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
+
+/*
+ * Contains all components of the bucket list.
+ * Features include a function to save the items, a submit button and its state, a textarea and its state,
+ * a way to sort the list, a delete button, and a check box with its state.
+ * Each item in the list has 3 attributes its identifier (id), its text (determined by the input from the user from the textarea),
+ * and a boolean, if the item is done (true) or not done (false) default value is not done.
+ */
+
+
 const BucketList = () => {
 
     const savedItems = () => {
