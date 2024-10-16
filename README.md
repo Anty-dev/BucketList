@@ -25,7 +25,7 @@ To-do's
 
 [X]- Improve the CSS/formating and design of the page
 
-[]- Work on the home page 
+[X]- Work on the home page 
 
 [X]- Finish delete button design and implementation 
 
